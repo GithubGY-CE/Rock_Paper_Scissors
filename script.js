@@ -39,12 +39,16 @@ function game(playerSelection) {
     if (computerScore === 5 || playerScore === 5) {
         if (!document.querySelector(".playAgainButton")) {
             removeElements(".round-text");
+
+            let textResult = "Defeat!"
             if (playerScore > computerScore) {
                 updateScore("#player_score", playerScore);
+                textResult = "Victory!";
             } else {
                 updateScore("#computer_score", computerScore);
             }
-            displayFinalResult(playerScore, computerScore);
+            
+            displayFinalResult(textResult);
         }
     }
 }
@@ -135,16 +139,10 @@ function getComputerChoice() {
     return choices[Math.floor(Math.random() * choices.length)];
 }
 
-function displayFinalResult(playerScore, computerScore) {
-    let finalResult = "Defeat!"
-
-    if (playerScore > computerScore) {
-        finalResult = "Victory!";
-    }
-
+function displayFinalResult(textResult) {
     const paragraph = document.createElement("p");
     paragraph.setAttribute("class", "finalResult");
-    paragraph.textContent = "Victory!";
+    paragraph.textContent = textResult;
 
     const playAgain = document.createElement("button");
     playAgain.setAttribute("class", "playAgainButton");
