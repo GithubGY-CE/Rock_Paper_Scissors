@@ -86,7 +86,7 @@ body, html {
 }
 
 .round-text, .hand {
-    animation: fadeOut 1.5s forwards;
+    animation: fadeOut 0.8s forwards;
     animation-delay: 1s;
 }
 

@@ -30,7 +30,7 @@ function game(playerSelection) {
             playerScore++;
             updateScore("#player_score", playerScore);
         } else {
-            roundText.textContent = "It's a tie!";
+            roundText.textContent = "It's a TIE!";
         }
 
         appendChild("#text-result", roundText);
@@ -47,7 +47,7 @@ function game(playerSelection) {
             } else {
                 updateScore("#computer_score", computerScore);
             }
-            
+
             displayFinalResult(textResult);
         }
     }
