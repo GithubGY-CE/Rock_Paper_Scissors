@@ -1,0 +1,140 @@
+body, html {
+    background-color: black;
+    max-height: 100vh;
+    min-width: 600px;
+}
+
+#title {
+    text-align: center;
+    color: white;
+    padding: 25px;
+}
+
+.score, #choose {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin: 20px 350px;
+    /* margin: 20px 150px; */
+}
+
+#choose {
+    margin-top: 80px;
+    white-space: nowrap;
+}
+
+.selection {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 20px 400px 20px 400px;
+}
+
+.fist, .hand {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    padding: 30px;
+    margin: 0 230px;
+    border: 2px solid white;
+}
+
+.fist {
+    animation: blink 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.player_choices {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+   
+}
+
+.button-image {
+    width: 100px;
+    margin: 40px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.button-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem #ffc600;
+    cursor: pointer;
+}
+
+.round-text {
+    color: wheat;
+    text-align: center;
+}
+
+.round-text, .hand {
+    animation: fadeOut 1.5s forwards;
+    animation-delay: 1s;
+}
+
+.win {
+    box-shadow: 0 0 2rem green;
+}
+
+.lose {
+    box-shadow: 0 0 2rem red;
+}
+
+.tie {
+    box-shadow: 0 0 2rem yellow;
+}
+
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+#text-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.finalResult {
+    color: wheat;
+    font-size: 50px;
+    text-align: center;
+}
+ 
+.playAgainButton {
+    width: 150px;
+    font-size: 20px;
+    height:50px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+}
+
+.playAgainButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem #8977d5;
+    cursor: pointer;
+}

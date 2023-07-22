@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <h1 id="title">Rock Paper Scissors</h2>
+    <div class="score">
+        <div class="score">
+            <h2>You: </h2>
+            <h2 id="player_score">0</h2>
+        </div>
+        <div class="score">
+            <h2>Computer: </h2>
+            <h2 id="computer_score">0</h2>
+        </div>
+    </div>
+    <div class = "selection">
+        <img src="./images/fist-left.png" alt="Fist" class="fist" id="hand-left">
+        <img src="./images/fist-right.png" alt="Fist" class="fist" id="hand-right">
+    </div>
+    <!-- <div class = "selection">
+        <img src="./images/hand-paper-left.png" alt="player choice" id="hand-left" class="hand win">
+        <img src="./images/hand-scissors-right.png" alt="computer choice" id="hand-right" class="hand lose">
+    </div> -->
+    <h2 id="choose">Click on your choice:</h2>
+    <div class="player_choices">
+        <img src="./images/stone.png" alt="rock" class="button-image" id="rock" draggable="false">
+        <img src="./images/paper.png" alt="paper" class="button-image" id="paper" draggable="false">
+        <img src="./images/scissors.png" alt="scissors" class="button-image" id="scissors" draggable="false">
+    </div>
+
+    <div id="text-result">
+    </div>
 </body>
 </html>
