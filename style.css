@@ -99,7 +99,7 @@ body, html {
 }
 
 .tie {
-    box-shadow: 0 0 2rem yellow;
+    box-shadow: 0 0 1.5rem yellow;
 }
 
 @keyframes fadeOut {
