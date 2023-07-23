@@ -7,7 +7,7 @@ body, html {
 .heading {
     text-align: center;
     color: white;
-    margin: 25px;
+    margin: 10px;
 }
 
 .score, #choose {
@@ -16,11 +16,11 @@ body, html {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    margin: 10px 350px;
+    margin: 10px 360px;
 }
 
 #choose {
-    margin-top: 80px;
+    margin-top: 65px;
     white-space: nowrap;
 }
 
@@ -66,7 +66,7 @@ body, html {
 }
 
 .button-image {
-    width: 80px;
+    width: 75px;
     margin: 40px;
     border: 2px solid white;
     border-radius: 15px;
@@ -121,6 +121,8 @@ body, html {
     color: wheat;
     font-size: 50px;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
  
 .playAgainButton {
