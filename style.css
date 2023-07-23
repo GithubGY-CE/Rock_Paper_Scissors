@@ -16,8 +16,7 @@ body, html {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    margin: 15px 350px;
-    /* margin: 20px 150px; */
+    margin: 10px 350px;
 }
 
 #choose {
