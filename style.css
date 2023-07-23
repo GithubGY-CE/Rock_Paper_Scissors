@@ -4,10 +4,10 @@ body, html {
     min-width: 600px;
 }
 
-#title {
+.heading {
     text-align: center;
     color: white;
-    padding: 25px;
+    margin: 25px;
 }
 
 .score, #choose {
